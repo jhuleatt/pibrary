@@ -1,6 +1,6 @@
 {
   "name": "pibrary",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "everything pi",
   "main": "lib/pibrary.js",
   "dependencies": {
