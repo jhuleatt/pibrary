@@ -2,7 +2,7 @@
   "name": "pibrary",
   "version": "0.0.1",
   "description": "everything pi",
-  "main": "lib/index.js",
+  "main": "lib/pibrary.js",
   "dependencies": {
     "n": "^2.1.0"
   },
