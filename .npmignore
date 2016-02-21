@@ -34,6 +34,3 @@ node_modules
 
 # Node modules
 node_modules
-
-# compiled code
-lib
