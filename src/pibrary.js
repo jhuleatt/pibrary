@@ -1,7 +1,7 @@
-let pibary = {};
+const pibrary = {};
 
 pibrary.pi = function () {
-  return 3.14;
-}
+  return Math.PI;
+};
 
 export default pibrary;

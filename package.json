@@ -2,20 +2,23 @@
   "name": "pibrary",
   "version": "0.0.1",
   "description": "everything pi",
-  "main": "transpiled/index.js",
+  "main": "lib/index.js",
   "dependencies": {
     "n": "^2.1.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.5.1",
     "babel-core": "^6.5.2",
-    "babel-loader": "^6.2.3",
     "babel-preset-es2015": "^6.5.0",
     "eslint": "^2.2.0",
-    "eslint-loader": "^1.3.0",
-    "webpack": "^1.12.13"
+    "mocha": "^2.4.5"
   },
   "scripts": {
-    "build": "webpack src/pibrary.js transpiled/index.js"
+    "compile": "babel --presets es2015 -d lib/ src/",
+    "lint": "eslint src/pibrary.js",
+    "mocha": "mocha --compilers js:babel-core/register",
+    "test": "npm run lint && npm run compile && npm run mocha",
+    "buildAndTest": "npm run build && npm run test"
   },
   "repository": {
     "type": "git",
